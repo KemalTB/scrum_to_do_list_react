@@ -23,13 +23,13 @@ const TaskForm = ({ addTask }) => {
         type="text"
         value={owner}
         onChange={(e) => setOwner(e.target.value)}
-        placeholder="Owner"
+        placeholder="Task Owner..."
       />
       <input
         type="text"
         value={task}
         onChange={(e) => setTask(e.target.value)}
-        placeholder="Task"
+        placeholder="Write a new Task..."
       />
       <input
         type="date"

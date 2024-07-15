@@ -29,15 +29,25 @@ body {
   max-width: 1200px;
   background-color: var(--second-bg-color);
   padding: 20px;
-  box-shadow: 0 0 10px rgba(5, 234, 241, 1);
+  box-shadow: 0 0 25px rgba(5, 234, 241, 1);
   border-radius: 10px;
   overflow: auto;
+}
+img {
+width: 600px;  
+/* opacity: 0.5;   */
+border-radius: 5px;
+border: 3px solid var(--bg-color);
+box-shadow: 0 0 10px rgba(5, 234, 241, 1);
+
+
 }
 
 h1 {
   text-align: center;
   color: antiquewhite;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .input-container {
@@ -76,7 +86,7 @@ h1 {
 
 .column {
   flex: 1 1 24%;
-  background-color: rgb(247, 244, 244);
+  background-color: var(--bg-color);
   padding: 10px;
   border: 3px solid var(--text-color);
   border-radius: 5px;
@@ -86,35 +96,48 @@ h1 {
 
 .column h2 {
   text-align: center;
-  color: antiquewhite;
+  color: var(--text-color);
   background-color: var(--second-bg-color);
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 #todo-column h2, #todo-list .task {
   background-color: #d12828;
   color: #fff;
+  opacity: 0.8;
+  margin-bottom: 3px;
 }
 
-#in-progress-column h2, #in-progress-list .task {
+#inProgress-column h2, #inProgress-list .task {
   background-color: #fa8f15;
   color: #fff;
+  opacity: 0.8;
+  margin-bottom: 3px;
+
 }
 
 #check-column h2, #check-list .task {
   background-color: #1d39b6;
   color: #fff;
+  opacity: 0.8;
+  margin-bottom: 3px;
+
 }
 
 #done-column h2, #done-list .task {
   background-color: #17a017;
   color: #fff;
+  opacity: 0.8;
+  margin-bottom: 3px;
+
 }
 
 #done-list .task {
   text-decoration: line-through;
-  color: black;
+  text-decoration-color: var(--bg-color);
+  color: #fff;
 }
 
 .task-list {

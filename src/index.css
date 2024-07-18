@@ -103,14 +103,16 @@ h1 {
   margin-bottom: 5px;
 }
 
-#todo-column h2, #todo-list .task {
+ #todo-list .task {
   background-color: #d12828;
   color: #fff;
   opacity: 0.8;
   margin-bottom: 3px;
+
 }
 
-#inProgress-column h2, #inProgress-list .task {
+
+#inProgress-list .task {
   background-color: #fa8f15;
   color: #fff;
   opacity: 0.8;
@@ -118,7 +120,7 @@ h1 {
 
 }
 
-#check-column h2, #check-list .task {
+#check-list .task {
   background-color: #1d39b6;
   color: #fff;
   opacity: 0.8;
@@ -126,7 +128,7 @@ h1 {
 
 }
 
-#done-column h2, #done-list .task {
+#done-list .task {
   background-color: #17a017;
   color: #fff;
   opacity: 0.8;

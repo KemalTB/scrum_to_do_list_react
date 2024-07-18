@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 
 const TaskForm = ({ addTask }) => {
+  const [owner, setOwner] = useState('');
   const [task, setTask] = useState('');
   const [date, setDate] = useState('');
-  const [owner, setOwner] = useState('');
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (task && date && owner) {
-      addTask({ text: task, date, owner });
+    if (owner && task && date) {
+      addTask({ text: owner, task, date, });
+      setOwner('');
       setTask('');
       setDate('');
-      setOwner('');
+      
     } else {
       alert('Please fill in all fields: Owner, Task, and Date.');
     }

@@ -13,7 +13,8 @@ const Task = ({ task, status, moveTask, editTask, deleteTask, finishTask }) => {
       <div className="task-buttons">
         {status !== 'todo' && <button onClick={() => handleMoveTask('back')}>Back</button>}
         <button onClick={() => editTask(task, status)}>Edit</button>
-        <button onClick={() => deleteTask(task, status)}>Delete</button>
+        {status !== 'done' && <button onClick={() => deleteTask(task, status)}>Delete</button>}
+        {/* <button onClick={() => deleteTask(task, status)}>Delete</button> */}
         {status !== 'done' && <button onClick={() => handleMoveTask('next')}>Next</button>}
         {status === 'done' && <button onClick={() => finishTask(task)}>Finish</button>}
       </div>

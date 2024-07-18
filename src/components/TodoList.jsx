@@ -19,9 +19,10 @@ const TodoList = ({ tasks, setTasks, addTask }) => {
   };
 
   const editTask = (task, status) => {
+    const newTaskOwner = prompt('Edit task owner:', task.owner);
     const newTaskText = prompt('Edit task:', task.text);
     const newTaskDate = prompt('Edit due date (YYYY-MM-DD):', task.date);
-    const newTaskOwner = prompt('Edit task owner:', task.owner);
+    
 
     if (newTaskText && newTaskDate && newTaskOwner) {
       const updatedTasks = {
